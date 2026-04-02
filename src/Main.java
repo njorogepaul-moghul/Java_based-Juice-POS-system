@@ -8,20 +8,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        // Create products
+        // We create products
         Product mango = new Product(1, "Mango Juice", 150.0, 20);
         Product apple = new Product(2, "Apple Juice", 120.0, 15);
 
-        // Create order items
+        // we create order items
         OrderItem item1 = new OrderItem(mango, 2); // 2 mango
         OrderItem item2 = new OrderItem(apple, 1); // 1 apple
 
-        // Add items to list
+        // Adding items to list
         List<OrderItem> items = new ArrayList<>();
         items.add(item1);
         items.add(item2);
 
-        // Calculate total
+        // Calculating total
         double total = item1.getSubtotal() + item2.getSubtotal();
 
         // Create order
