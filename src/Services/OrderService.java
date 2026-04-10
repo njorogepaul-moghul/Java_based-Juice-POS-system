@@ -1,23 +1,31 @@
-package models;
+package Services;
+
+import models.Order;
+import models.OrderItem;
+import models.Product;
+
+import java.util.ArrayList;
 
 public class OrderService {
-    public Order CreateOrder(int orderId) {
-        return new order(orderId,new Array List<>(),0.0);
+
+    // Create a new order
+    public Order createOrder(int orderId) {
+        return new Order(orderId, new ArrayList<>(), 0.0);
     }
 
+    // Add item to an order
     public void addItem(Order order, Product product, int quantity) {
-        OrderItem Order = new orderItem(product, quantity);
-        Order.getItems().add(Item);
-        UpdateTotal(Order);
+        OrderItem item = new OrderItem(product, quantity);
+        order.getItems().add(item);
+        updateTotal(order);
     }
 
-    public void updateTotal(Orde order) {
-        double total = 0;
-        for (OrderItem Item : Order.getItems()) {
+    // Update total of an order
+    public void updateTotal(Order order) {
+        double total = 0.0;
+        for (OrderItem item : order.getItems()) {
             total += item.getSubtotal();
         }
         order.setTotal(total);
-
     }
-
 }
