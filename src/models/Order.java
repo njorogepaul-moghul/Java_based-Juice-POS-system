@@ -8,13 +8,11 @@ public class Order {
     private List<OrderItem> items;
     private double totalAmount;
     private LocalDateTime timestamp;
-    private double total;
 
-    public Order(int orderId, List<OrderItem> items, double total) {
+    public Order(int orderId, List<OrderItem> items, double totalAmount) {
         this.orderId = orderId;
         this.items = items;
-        this.total = total;
-        this.totalAmount = 0.0; // default
+        this.totalAmount = totalAmount;
         this.timestamp = LocalDateTime.now();// auto timestamp
     }
 
@@ -35,13 +33,9 @@ public class Order {
         return timestamp;
     }
 
-    public double getTotal() {
-        return total;
-    }
-
     // Setter for total
-    public void setTotal(double total) {
-        this.total = total;
+    public void setTotal(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
 }
