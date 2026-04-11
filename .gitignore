@@ -1,0 +1,28 @@
+# Maven build output
+target/
+
+# VS Code settings
+.vscode/
+*.classpath
+*.project
+*.factorypath
+
+# Java compiled files
+*.class
+*.jar
+
+# Database credentials — keep these private!
+src/main/java/db/DBConnection.java
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE files
+*.iml
+.idea/
