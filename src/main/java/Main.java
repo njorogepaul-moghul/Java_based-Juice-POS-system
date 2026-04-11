@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
 
         // We create products
-        Product mango = new Product(1, "Mango Juice", 150.0, 20);
-        Product apple = new Product(2, "Apple Juice", 120.0, 15);
+        Product mango = new Product(1, "Mango Juice", 150.0, 20, "Tropical");
+        Product apple = new Product(2, "Apple Juice", 120.0, 15, "Classic");
 
         // we create order items
         OrderItem item1 = new OrderItem(mango, 2); // 2 mango

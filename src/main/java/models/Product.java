@@ -5,13 +5,15 @@ public class Product {
     private String name;
     private double price;
     private int stock;
+    private String category;
 
     // constructor
-    public Product(int id, String name, double price, int stock) {
+    public Product(int id, String name, double price, int stock, String category) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.stock = stock;
+        this.category = category;
     }
 
     // getters and setters
@@ -45,6 +47,14 @@ public class Product {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     @Override

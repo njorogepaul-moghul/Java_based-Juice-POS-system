@@ -34,7 +34,7 @@ public class Order {
     }
 
     // Setter for total
-    public void setTotal(double totalAmount) {
+    public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
 
